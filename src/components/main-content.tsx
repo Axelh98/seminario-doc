@@ -10,10 +10,9 @@ export function MainContent() {
         </div>
         <div className="space-y-6">
           <div className="space-y-2">
-            <h1 className="scroll-m-20 text-4xl font-bold tracking-tight">Introduction</h1>
+            <h1 className="scroll-m-20 text-4xl font-bold tracking-tight">Introdución</h1>
             <p className="text-lg text-muted-foreground">
-              Welcome to the documentation for our framework. Get started building powerful applications quickly and
-              efficiently.
+              Bienvido/a a la documentación de Seminario. Abordaremos temas como 
             </p>
           </div>
           <div className="space-y-4">
