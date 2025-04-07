@@ -1,6 +1,5 @@
 import type { Metadata } from "next";
 import "./globals.css";
-import { Navigation } from "@/components/app-sidebar";
 
 export const metadata: Metadata = {
   title: "v0 App",

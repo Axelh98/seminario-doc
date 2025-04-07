@@ -4,6 +4,6 @@ import { Navigation } from "@/components/app-sidebar"
 import { Questions } from "@/components/questions"
 
 export default function Home() {
-  return <DocsLayout navigation={<Navigation />} content={<MainContent />} questions={<Questions />} />
+  return <DocsLayout content={<MainContent />} questions={<Questions />} />
 }
 

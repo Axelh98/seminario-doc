@@ -37,7 +37,7 @@ const navItems: NavItem[] = [
   },
   {
     title: "Supervisoras",
-    href: "/api-reference",
+    href: "/Supervisoras",
     children: [
       { title: "¿Que es una Supervisora de Seminario?", href: "/api-reference/authentication" },
 
@@ -68,9 +68,9 @@ const navItems: NavItem[] = [
 
   {
     title: "WISE",
-    href: "/",
+    href: "/wise",
     children: [
-      { title: "¿Que es Wise?", href: "/wise" },
+      { title: "Introducción", href: "/wise/introduccion" },
       { title: "Iniciar Sesión", href: "/wise/inicio-sesion" },
       { title: "Configurar mi ubicación", href: "/wise/configurar" },
       { title: "Buscar mi clase", href: "/wise/buscar-clase" },
@@ -113,7 +113,7 @@ export function Navigation() {
               <Button
                 variant="ghost"
                 className={cn(
-                  "w-full justify-start text-left font-medium",
+                  "w-full justify-start text-left font-medium hover:bg-blue-200 focus:bg-blue-300 active:bg-blue-300",
                   pathname === item.href && "bg-accent text-accent-foreground",
                 )}
                 onClick={() => toggleExpand(item.title)}
@@ -122,13 +122,13 @@ export function Navigation() {
                 <span className="ml-auto">{expanded[item.title] ? "−" : "+"}</span>
               </Button>
               {item.children && expanded[item.title] && (
-                <div className="ml-4 mt-1 space-y-1">
+                <div className="ml-4 mt-1 space-y-1 ">
                   {item.children.map((child) => (
                     <Link
                       key={child.href}
                       href={child.href}
                       className={cn(
-                        "block py-2 px-3 text-sm rounded-md hover:bg-accent",
+                        "block py-2 px-3 text-sm rounded-md hover:bg-blue-200 focus:bg-blue-300 active:bg-blue-300",
                         pathname === child.href && "bg-accent text-accent-foreground font-medium",
                       )}
                     >

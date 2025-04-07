@@ -1,17 +1,17 @@
-import type { ReactNode } from "react"
+import { Navigation } from "@/components/app-sidebar";
+import type { ReactNode } from "react";
 
 interface DocsLayoutProps {
-  navigation: ReactNode
-  content: ReactNode
-  questions: ReactNode
+  content: ReactNode;
+  questions: ReactNode;
 }
 
-export function DocsLayout({ navigation, content, questions }: DocsLayoutProps) {
+export function DocsLayout({ content, questions }: DocsLayoutProps) {
   return (
     <div className="flex flex-col md:flex-row min-h-screen">
       {/* Navigation - Left Column */}
       <div className="w-full md:w-64 lg:w-90 border-r border-border bg-card md:h-screen md:overflow-y-auto sticky top-0">
-        {navigation}
+        <Navigation />
       </div>
 
       {/* Main Content - Middle Column */}
@@ -24,6 +24,5 @@ export function DocsLayout({ navigation, content, questions }: DocsLayoutProps) 
         {questions}
       </div>
     </div>
-  )
+  );
 }
-
